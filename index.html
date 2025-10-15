@@ -9,77 +9,58 @@
         *{
             padding: 0;
             margin: 0;
-            font-family: sans-serif;
+        }
+        html, body{
+            min-height: 100vh;
+            background-color: darkgray;
         }
         header{
             background-color: black;
             color: white;
             padding: 40px;
+            text-align: center;
         }
         header h1{
             color: white;
-            text-align: center;
-            padding: 10px 10px 2px 10px;
+            padding-top: 50px;
             font-size: 55px;
+            text-transform: uppercase; /**/
         }
         header p{
             color: white;
-            text-align: center;
-            padding: 10px;
+            padding-bottom: 50px;
         }
-        header a{
+        header a, footer a{ /**/
             color: white;
+            text-decoration: none;
+            font-weight: bolder; /**/
+        }
+        header a:hover, footer a:hover{ /**/
             text-decoration: underline;
         }
-        main{
-            max-width: 900px;
-            min-width: 300px;
-            min-height: 1000px;
-            margin: auto;
-            box-shadow: 3px 6px 11px rgba(0, 0, 0, 0.466);
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+        section{
+            padding-top: 10vh; /**/
+            padding-right: 10vh;
+            line-height: 2em;
+            padding-left: 30px;
         }
-        main p{
-            padding: 20px;
-            text-align: left;
-            font-size: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
+        section.normal{
+            background-color: white;
+            color: black;
         }
-        p#pri{
-            margin-top: 0;
+        section.imagem{
+            background-color: rgb(182, 182, 182);
+            color: white;
         }
-        div.lb{
-            background-image: url(./imagens/background001.jpg);
-            background-position: center center;
-            background-size: 100%;
-            background-size: cover;
-            max-width: 750px;
-            min-width: 150px;
-            height: 200px;
-            margin: auto;
-        }
-        div.books{
-            background-image: url(./imagens/background002.jpg);
-            background-position: center center;
-            background-size: 100%;
-            background-size: cover;
-            max-width: 750px;
-            min-width: 150px;
-            height: 200px;
-            margin: auto;
+        section.imagem p{
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.267);
         }
         footer{
-            margin-top: 70px;
             background-color: black;
             color: white;
             text-align: center;
-            padding: 2px;
-        }
-        footer a{
-            color: white;
-            text-decoration: underline;
+            padding: 10px;
         }
     </style>
 </head>
@@ -90,7 +71,7 @@
     </header>
     <main>
         <article>
-                <section>
+                <section class="normal">
                     <p id="pri">
                         Estou ficando cansado <br>
                         Da tal tecnologia <br>
@@ -100,10 +81,7 @@
                         Antes que eu caduque <br>
                         Vou dizer tudo em poesia. <br> </p>
                 </section>
-                    <div class="lb">
-
-                    </div>
-                    <section>
+                    <section class="imagem">
                         <p>
                             Não é mais como era antes <br>
                              É tudo abreviado <br>
@@ -114,10 +92,7 @@
                             E um coração desenhado. <br>
                         </p>
                     </section>
-                    <div class="books">
-
-                    <section>
-                        </div>
+                    <section class="normal">
                         <p>
                             Arroba agora não pesa <br>
                             É parte de um endereço <br>
@@ -137,11 +112,7 @@
                             Decifre esse rabisco. <br>
                         </p>
                     </section>
-                    <div class="lb">
-
-                    </div>
-                    
-                    <section>
+                    <section class="imagem">
                         <p>
                             Tenho saudade das cartas <br>
                             Escritas com a própria mão <br>
@@ -151,12 +122,8 @@
                             Era texto de verdade <br>
                             Nas linhas do coração. <br>
                         </p>
-                    </section>
-                    <div class="books">
-
-                    </div>
-                    
-                    <section>
+                    </section>        
+                    <section class="normal">
                         <p>
                             Agora, escrevo e envio <br>
                             Chegando na mesma hora <br>
